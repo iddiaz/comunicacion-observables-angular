@@ -1,3 +1,4 @@
+import { DataShared2Service } from './services/dataShared2.service';
 import { DatasharedService } from './services/datashared.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -23,7 +24,8 @@ import { BodyComponent } from './components/body/body.component';
     HttpModule
   ],
   providers: [
-    DatasharedService
+    DatasharedService,
+    DataShared2Service
   ],
   bootstrap: [AppComponent]
 })
